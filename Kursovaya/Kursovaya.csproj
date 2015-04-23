@@ -97,6 +97,9 @@
     <EmbeddedResource Include="About_form.resx">
       <DependentUpon>About_form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Description_form.resx">
+      <DependentUpon>Description_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Flowchart_form.resx">
       <DependentUpon>Flowchart_form.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,6 +143,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Description.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

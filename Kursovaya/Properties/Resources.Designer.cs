@@ -63,6 +63,16 @@ namespace Kursovaya.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Description {
+            get {
+                object obj = ResourceManager.GetObject("Description", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap flowchart {
             get {
                 object obj = ResourceManager.GetObject("flowchart", resourceCulture);

@@ -110,7 +110,8 @@ namespace Kursovaya
             int i;
             for (i = 0; i < N; i++)
             {
-                g.DrawString("x[" + Convert.ToString(i) + "]=" + Convert.ToString(X[i]), new Font("Times New Roman", 10), Brushes.Black, new PointF(10, i * 15));
+                g.DrawString("x[" + Convert.ToString(i) + "]=" + Convert.ToString(X[i]), 
+                    new Font("Times New Roman", 10), Brushes.Black, new PointF(10, i * 15));
             }
         }
         private void Init_Input_Field(object sender, EventArgs e)
@@ -191,6 +192,8 @@ namespace Kursovaya
                 vs.InitMatrix(A, B);
                 vs.Show();
             }
+            else
+                MessageBox.Show("Визуализация возможна только при порядке матрицы равном двум!", "Ошибка");
         }
     }
 }
