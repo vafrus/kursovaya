@@ -39,7 +39,7 @@
             this.groupBox2.Controls.Add(this.Out_vis);
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(370, 289);
+            this.groupBox2.Size = new System.Drawing.Size(530, 328);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "График";
@@ -48,7 +48,7 @@
             // 
             this.Out_vis.Location = new System.Drawing.Point(6, 19);
             this.Out_vis.Name = "Out_vis";
-            this.Out_vis.Size = new System.Drawing.Size(358, 264);
+            this.Out_vis.Size = new System.Drawing.Size(518, 302);
             this.Out_vis.TabIndex = 0;
             this.Out_vis.TabStop = false;
             // 
@@ -56,8 +56,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(393, 313);
+            this.ClientSize = new System.Drawing.Size(554, 352);
             this.Controls.Add(this.groupBox2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "VisForm";
             this.Text = "Визуализация";
             this.groupBox2.ResumeLayout(false);

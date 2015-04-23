@@ -27,8 +27,8 @@ namespace Kursovaya
             Graphics g = Graphics.FromImage(Out_vis.Image);
             Pen p = Pens.Black;
             float H = Out_vis.Height, W = Out_vis.Width;
-            A1 = A[0, 0]; A2 = A[0, 1];
-            B1 = A[1, 0]; B2 = A[1, 1];
+            A1 = A[0, 0]; A2 = A[1, 0];
+            B1 = A[0, 1]; B2 = A[1, 1];
             C1 = B[0]; C2 = B[1];
             double Scale = 10;
             

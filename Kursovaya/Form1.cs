@@ -117,39 +117,39 @@ namespace Kursovaya
         {
             int i, j;
             if (In_matrix!=null)
-            for (j = 0; j < N; j++)
-                for (i = 0; i < N + 1; i++)
+            for (i = 0; i < N; i++)
+                for (j = 0; j < N + 1; j++)
                 {
                     In_matrix[i, j].Dispose();
                     In_matrix_L[i, j].Dispose();
-                }
+                } 
 
             N=Convert.ToInt16(Rang.Text);
             if (N > 10) N = 10;
 
-            In_matrix = new System.Windows.Forms.Control[N + 1, N];
-            In_matrix_L = new System.Windows.Forms.Control[N + 1, N];
+            In_matrix = new System.Windows.Forms.Control[N, N + 1];
+            In_matrix_L = new System.Windows.Forms.Control[N, N + 1];
 
-            for (j = 0; j < N; j++)
-                for (i = 0; i < N+1; i++)
+            for (i = 0; i < N; i++)
+                for (j = 0; j < N + 1; j++)
                 {
                     In_matrix[i, j] = new System.Windows.Forms.TextBox();
                     In_area.Controls.Add(In_matrix[i, j]);
-                    In_matrix[i, j].Location = new Point(i * 65 + 50, j * 20 + 15);
+                    In_matrix[i, j].Location = new Point(j * 65 + 50, i * 20 + 15);
                     In_matrix[i, j].Size = new Size(25, 20);
                     In_matrix[i, j].Text = "0";
 
                     In_matrix_L[i, j] = new System.Windows.Forms.Label();
                     In_area.Controls.Add(In_matrix_L[i, j]);
-                    In_matrix_L[i, j].Location = new Point(i * 65 + 15, j * 20 + 17);
+                    In_matrix_L[i, j].Location = new Point(j * 65 + 15, i * 20 + 17);
                     In_matrix_L[i, j].Size = new Size(40, 20);
-                    if (i != N) In_matrix_L[i, j].Text = "a[" + Convert.ToString(i + 1) + "," + Convert.ToString(j + 1) + "]=";
-                    else In_matrix_L[i, j].Text = "b[" + Convert.ToString(j + 1) + "]=";
+                    if (j != N) In_matrix_L[i, j].Text = "a[" + Convert.ToString(i + 1) + "," + Convert.ToString(j + 1) + "]=";
+                    else In_matrix_L[i, j].Text = "b[" + Convert.ToString(i + 1) + "]=";
 
                 }
         }
 
-        private void Solve_SLAU(object sender, EventArgs e)
+        private void Solve_SLAU(object sender, EventArgs e) 
         {
             double[,] A = new double[N, N];
             double[] B = new double[N];
@@ -158,11 +158,11 @@ namespace Kursovaya
 
             try
             {
-                for (j = 0; j < N; j++)
-                    for (i = 0; i < N; i++)
-                        A[j, i] = Convert.ToDouble(In_matrix[i, j].Text);
                 for (i = 0; i < N; i++)
-                    B[i] = Convert.ToDouble(In_matrix[N, i].Text);
+                    for (j = 0; j < N; j++)
+                        A[j, i] = Convert.ToDouble(In_matrix[j, i].Text);
+                for (i = 0; i < N; i++)
+                    B[i] = Convert.ToDouble(In_matrix[i, N].Text);
                 X = solve(A, B, N);
                 print_X(X);
             }
@@ -183,7 +183,7 @@ namespace Kursovaya
                     for (j = 0; j < N; j++)
                         A[j, i] = Convert.ToDouble(In_matrix[j, i].Text);
                 for (i = 0; i < N; i++)
-                    B[i] = Convert.ToDouble(In_matrix[N, i].Text);
+                    B[i] = Convert.ToDouble(In_matrix[i, N].Text);
                 vs = new VisForm();
                 vs.InitMatrix(A, B);
                 vs.Show();
