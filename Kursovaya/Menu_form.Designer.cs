@@ -143,20 +143,21 @@
             this.statusStrip1.Location = new System.Drawing.Point(0, 240);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(509, 22);
+            this.statusStrip1.SizingGrip = false;
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(426, 17);
-            this.toolStripStatusLabel1.Text = "Для того чтобы решить систему арвнений нажмите Меню -> Решить СЛАУ";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(432, 17);
+            this.toolStripStatusLabel1.Text = "Для того чтобы решить систему уравнений нажмите Меню -> Решить СЛАУ";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(13, 28);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 27);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(341, 195);
+            this.pictureBox1.Size = new System.Drawing.Size(509, 210);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;

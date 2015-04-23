@@ -20,6 +20,7 @@ namespace Kursovaya
         public Form1()
         {
             InitializeComponent();
+            Init_Input_Field(this,null);
         }
         public double[] solve(double[,] A, double[] X, int N)
         {
@@ -119,7 +120,7 @@ namespace Kursovaya
             int i, j;
             if (In_matrix!=null)
             for (i = 0; i < N; i++)
-                for (j = 0; j < N + 1; j++)
+                for (j = 0; j < N + 1; j++) 
                 {
                     In_matrix[i, j].Dispose();
                     In_matrix_L[i, j].Dispose();
@@ -131,13 +132,15 @@ namespace Kursovaya
             In_matrix = new System.Windows.Forms.Control[N, N + 1];
             In_matrix_L = new System.Windows.Forms.Control[N, N + 1];
 
+            int offset = 40;
             for (i = 0; i < N; i++)
                 for (j = 0; j < N + 1; j++)
                 {
                     In_matrix[i, j] = new System.Windows.Forms.TextBox();
                     In_area.Controls.Add(In_matrix[i, j]);
-                    In_matrix[i, j].Location = new Point(j * 65 + 50, i * 20 + 15);
+                    In_matrix[i, j].Location = new Point(j * 65 + 50, i * 20 + 15 + offset);
                     In_matrix[i, j].Size = new Size(25, 20);
+                    In_matrix[i, j].TabIndex = 4;
                     if (i == j) In_matrix[i, j].Text = "1";
                     else if (j == N) In_matrix[i, j].Text = Convert.ToString(i+1);
                     else In_matrix[i, j].Text = "0";
@@ -145,7 +148,7 @@ namespace Kursovaya
 
                     In_matrix_L[i, j] = new System.Windows.Forms.Label();
                     In_area.Controls.Add(In_matrix_L[i, j]);
-                    In_matrix_L[i, j].Location = new Point(j * 65 + 15, i * 20 + 17);
+                    In_matrix_L[i, j].Location = new Point(j * 65 + 15, i * 20 + 17 + offset);
                     In_matrix_L[i, j].Size = new Size(40, 20);
                     if (j != N) In_matrix_L[i, j].Text = "a[" + Convert.ToString(i + 1) + "," + Convert.ToString(j + 1) + "]=";
                     else In_matrix_L[i, j].Text = "b[" + Convert.ToString(i + 1) + "]=";
@@ -193,7 +196,7 @@ namespace Kursovaya
                 vs.Show();
             }
             else
-                MessageBox.Show("Визуализация возможна только при порядке матрицы равном двум!", "Ошибка");
+                MessageBox.Show("Визуализация возможна только при порядке матрицы равном двум!", "Ошибка"); 
         }
     }
 }
