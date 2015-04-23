@@ -137,7 +137,10 @@ namespace Kursovaya
                     In_area.Controls.Add(In_matrix[i, j]);
                     In_matrix[i, j].Location = new Point(j * 65 + 50, i * 20 + 15);
                     In_matrix[i, j].Size = new Size(25, 20);
-                    In_matrix[i, j].Text = "0";
+                    if (i == j) In_matrix[i, j].Text = "1";
+                    else if (j == N) In_matrix[i, j].Text = Convert.ToString(i+1);
+                    else In_matrix[i, j].Text = "0";
+                    
 
                     In_matrix_L[i, j] = new System.Windows.Forms.Label();
                     In_area.Controls.Add(In_matrix_L[i, j]);
