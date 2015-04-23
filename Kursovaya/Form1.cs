@@ -127,8 +127,11 @@ namespace Kursovaya
                 } 
 
             N=Convert.ToInt16(Rang.Text);
-            if (N > 10) N = 10;
-
+            if (N > 10)
+            {
+                N = 10;
+                MessageBox.Show("Порядок матрицы должен быть меньше или равен 10");
+            }
             In_matrix = new System.Windows.Forms.Control[N, N + 1];
             In_matrix_L = new System.Windows.Forms.Control[N, N + 1];
 
