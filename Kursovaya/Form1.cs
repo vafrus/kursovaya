@@ -90,29 +90,26 @@ namespace Kursovaya
         private void print_false()
         {
             Out_pic.Image = new Bitmap(Out_pic.Width, Out_pic.Height);
-            Brush b = Brushes.Black;
-            
-            try
-            {
-                g.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.AssumeLinear;
-            }
-            catch { }
-            
+            Brush b = new SolidBrush(Color.Black);
+            Font f = new Font("Times New Roman", 10);
             g = Graphics.FromImage(Out_pic.Image);
-            g.DrawString("Матрица вырождена", new Font("Arial",10,FontStyle.Regular), b, 15, 15);
-            //g.DrawString("Матрица вырождена", new Font("Consolas", 10), b, new PointF(10, 15));v
+            g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+
+            g.DrawString("Матрица вырождена", f, b, new PointF(15,15));
         }
         private void print_X(double[] X)
         {
             Out_pic.Image = new Bitmap(Out_pic.Width, Out_pic.Height);
             g = Graphics.FromImage(Out_pic.Image);
+            g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+            Brush b = new SolidBrush(Color.Black);
+            Font f = new Font("Times New Roman", 10);
             int H = Out_pic.Height, W = Out_pic.Width;
-            
             int i;
+
             for (i = 0; i < N; i++)
             {
-                g.DrawString("x[" + Convert.ToString(i) + "]=" + Convert.ToString(X[i]), 
-                    new Font("Times New Roman", 10), Brushes.Black, new PointF(10, i * 15));
+                g.DrawString("x[" + Convert.ToString(i) + "]=" + Convert.ToString(X[i]), f, b, new PointF(10, i * 15));
             }
         }
         private void Init_Input_Field(object sender, EventArgs e)

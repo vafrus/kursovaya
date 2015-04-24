@@ -25,7 +25,10 @@ namespace Kursovaya
             int i,j;
             Out_vis.Image = new Bitmap(Out_vis.Width, Out_vis.Height);
             Graphics g = Graphics.FromImage(Out_vis.Image);
+            g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
             Pen p = Pens.Black;
+            Brush br = new SolidBrush(Color.Black);
+            Font f = new Font("Times New Roman", 10);
             float H = Out_vis.Height, W = Out_vis.Width;
             A1 = A[0, 0]; A2 = A[1, 0];
             B1 = A[0, 1]; B2 = A[1, 1];
@@ -38,12 +41,12 @@ namespace Kursovaya
             for (i = 0; i <= W; i++)
             {
                 if ((W / 2 - i) % Scale == 0)
-                    g.DrawLine(Pens.Black,i,H/2+2,i,H/2-2);
+                    g.DrawLine(p,i,H/2+2,i,H/2-2);
             }
             for (i = 0; i <= H; i++)
             {
                 if ((H / 2 - i) % Scale == 0)
-                    g.DrawLine(Pens.Black, W / 2 + 2, i, W / 2 - 2, i);
+                    g.DrawLine(p, W / 2 + 2, i, W / 2 - 2, i);
             }
             //line1
             if (B1 != 0)
@@ -71,9 +74,9 @@ namespace Kursovaya
             }
 
             if ((A1==0 && A2==0 && C1/B1==C2/B2) || (B1==0 && B2==0 && C1/A1==C2/A2) || (B1!=0 && B2!=0 && A1/B1==A2/B2 && C1/B1==C2/B2))
-                g.DrawString("Графики накладываеются", new Font("Arial", 10, FontStyle.Regular), Brushes.Black, 15, 15);
+                g.DrawString("Графики накладываеются", f, br, 15, 15);
             else if ((A1==0 && A2==0 && C1/B1!=C2/B2) || (B1==0 && B2==0 && C1/A1!=C2/A2) || (B1!=0 && B2!=0 && A1/B1==A2/B2 && C1/B1!=C2/B2))
-                g.DrawString("Графики параллельны", new Font("Arial", 10, FontStyle.Regular), Brushes.Black, 15, 15);
+                g.DrawString("Графики параллельны", f, br, 15, 15);
             else
             {
                 double x, y;
@@ -93,8 +96,7 @@ namespace Kursovaya
                     y = (C1 / A1 - C2 / A2) / (B1 / A1 - B2 / A2);
                     x = C1 / A1 - B1 * y / A1;
                 }
-                g.DrawString("Точка пересечения [" + Convert.ToString(x) + ";" + Convert.ToString(y) + "]",
-                    new Font("Arial", 10, FontStyle.Regular), Brushes.Black, 15, 15);
+                g.DrawString("Точка пересечения [" + Convert.ToString(x) + ";" + Convert.ToString(y) + "]", f, br, 15, 15);
                 g.FillEllipse(Brushes.Yellow, 
                     Convert.ToSingle(W / 2 + x * Scale - 3), Convert.ToSingle(H / 2 - y * Scale - 3), 6, 6);
                 g.DrawEllipse(Pens.Black,
