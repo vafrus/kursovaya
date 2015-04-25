@@ -31,20 +31,22 @@ namespace Kursovaya
             Brush br = new SolidBrush(Color.Black);
             Font f = new Font("Times New Roman", 10);
             float H = Out_vis.Height, W = Out_vis.Width;
+            double Scale = 15;
+
             A1 = A[0, 0]; A2 = A[1, 0];
             B1 = A[0, 1]; B2 = A[1, 1];
             C1 = B[0]; C2 = B[1];
-            double Scale = 15;
             
             //grid
             int arrow_a = 3, arrow_b = 10;
-            g.DrawLine(p, 0, H / 2, W, H / 2);
-            g.DrawLine(p, W / 2, 0, W / 2, H);
-            g.DrawLine(p, W - arrow_b, H / 2 + arrow_a, W, H / 2);
+            g.DrawLine(p, 0, H / 2, W, H / 2); //x line
+            g.DrawLine(p, W / 2, 0, W / 2, H); //y line
+            g.DrawLine(p, W - arrow_b, H / 2 + arrow_a, W, H / 2); //x arrow
             g.DrawLine(p, W - arrow_b, H / 2 - arrow_a, W, H / 2);
-            g.DrawLine(p, W / 2 - arrow_a, arrow_b, W / 2, 0);
+            g.DrawLine(p, W / 2 - arrow_a, arrow_b, W / 2, 0); //y arrow
             g.DrawLine(p, W / 2 + arrow_a, arrow_b, W / 2, 0);
-            for (i = 0; i <= W - arrow_b; i++) //x
+
+            for (i = 0; i <= W - arrow_b; i++) //x 
             {
                 if ((W / 2 - i) % Scale == 0)
                     g.DrawLine(p,i,H/2+2,i,H/2-2);
