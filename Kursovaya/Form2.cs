@@ -26,6 +26,7 @@ namespace Kursovaya
             Out_vis.Image = new Bitmap(Out_vis.Width, Out_vis.Height);
             Graphics g = Graphics.FromImage(Out_vis.Image);
             g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             Pen p = Pens.Black;
             Brush br = new SolidBrush(Color.Black);
             Font f = new Font("Times New Roman", 10);
@@ -33,17 +34,22 @@ namespace Kursovaya
             A1 = A[0, 0]; A2 = A[1, 0];
             B1 = A[0, 1]; B2 = A[1, 1];
             C1 = B[0]; C2 = B[1];
-            double Scale = 10;
+            double Scale = 15;
             
             //grid
-            g.DrawLine(Pens.Black, 0, H / 2, W, H / 2);
-            g.DrawLine(Pens.Black, W / 2, 0, W / 2, H);
-            for (i = 0; i <= W; i++)
+            int arrow_a = 3, arrow_b = 10;
+            g.DrawLine(p, 0, H / 2, W, H / 2);
+            g.DrawLine(p, W / 2, 0, W / 2, H);
+            g.DrawLine(p, W - arrow_b, H / 2 + arrow_a, W, H / 2);
+            g.DrawLine(p, W - arrow_b, H / 2 - arrow_a, W, H / 2);
+            g.DrawLine(p, W / 2 - arrow_a, arrow_b, W / 2, 0);
+            g.DrawLine(p, W / 2 + arrow_a, arrow_b, W / 2, 0);
+            for (i = 0; i <= W - arrow_b; i++) //x
             {
                 if ((W / 2 - i) % Scale == 0)
                     g.DrawLine(p,i,H/2+2,i,H/2-2);
             }
-            for (i = 0; i <= H; i++)
+            for (i = arrow_b; i <= H; i++) //y
             {
                 if ((H / 2 - i) % Scale == 0)
                     g.DrawLine(p, W / 2 + 2, i, W / 2 - 2, i);
