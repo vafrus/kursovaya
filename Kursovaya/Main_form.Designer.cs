@@ -105,7 +105,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(81, 17);
             this.label6.TabIndex = 2;
-            this.label6.Text = "Уфа - 1015";
+            this.label6.Text = "Уфа - 2015";
             // 
             // Main_form
             // 
