@@ -47,7 +47,7 @@ namespace Kursovaya
                 {
                     break;
                 }
-                //
+                
                 if (k != i)
                 {
                     R = X[k];
@@ -60,12 +60,12 @@ namespace Kursovaya
                         A[i, j] = R;
                     }
                 }
-                //
+                
                 r = A[i, i];
                 X[i] = X[i] / r;
                 for (j = i; j < N; j++)
                     A[i, j] = A[i, j] / r;
-                //
+                
                 for (k = i + 1; k < N; k++)
                 {
                     r = A[k, i];
@@ -74,7 +74,7 @@ namespace Kursovaya
                         A[k, j] = A[k, j] - r * A[i, j];
                 }
             }
-            //
+            
             if (r != 0)
             {
                 for (i = N - 2; i >= 0; i--)
