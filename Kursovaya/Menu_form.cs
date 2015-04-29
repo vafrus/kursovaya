@@ -45,7 +45,7 @@ namespace Kursovaya
 
         private void Exit_menuItem_Click(object sender, EventArgs e)
         {
-            (tl as Main_form).Dispose();
+            Application.Exit();
         }
 
         private void Ref_menuItem_Click(object sender, EventArgs e)
@@ -62,7 +62,7 @@ namespace Kursovaya
 
         private void Menu_form_FormClosed(object sender, FormClosedEventArgs e)
         {
-            (tl as Main_form).Dispose();
+            Application.Exit();
         }
     }
 }

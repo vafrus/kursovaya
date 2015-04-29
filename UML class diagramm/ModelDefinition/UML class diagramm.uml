@@ -1,0 +1,720 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="39874f3f-f6db-4569-b21c-070283c55692"
+  name="UML class diagramm" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <appliedStereotypesInternal>
+    <stereotypeInstance
+      Id="dd0e4a88-cb16-4638-9f93-ed6366790eb1"
+      name="namespace"
+      profile="CSharpProfile">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="6874f52d-81b0-4a49-81bc-3a4cbff855e5">
+          <propertyInstance
+            Id="cad36506-1686-4e81-88eb-691062679962"
+            name="BaseName" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="55b09e1a-4c8c-4d56-9aee-de03f28fa6e9">
+          <propertyInstance
+            Id="43b34126-c303-413b-8c5f-01dc20d60a3f"
+            name="ClrAttributes" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="2cc8791a-4094-4119-822c-0d4f46059c34">
+          <propertyInstance
+            Id="3764e15d-163a-4e94-ad3b-2f5c59bccab1"
+            name="Usings" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance
+      Id="78d415ef-e0d7-4a79-b1f0-c7f03af2d5d8"
+      name="TextTemplateBindings"
+      profile="TextTemplateBindings">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="c4f4911d-383d-4e3c-83ff-6e1c3eb14f38">
+          <propertyInstance
+            Id="d47ebcb4-fe3d-4d0f-9dab-81210c7a7fcc"
+            name="Alias"
+            value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="c0686288-2637-4033-8747-39d338543512">
+          <propertyInstance
+            Id="eb3eb333-0086-4262-a143-961a6707104e"
+            name="TemplateFilePath"
+            value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="36d583c7-0ddf-4962-b8b2-147855f89110">
+          <propertyInstance
+            Id="91300076-b6fa-4ed3-923d-95cdba43e074"
+            name="ProjectPath"
+            value="ClassTemplate=..\UML class diagrammLib\UML class diagrammLib.csproj|EnumTemplate=..\UML class diagrammLib\UML class diagrammLib.csproj|InterfaceTemplate=..\UML class diagrammLib\UML class diagrammLib.csproj|StructTemplate=..\UML class diagrammLib\UML class diagrammLib.csproj" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="bc113241-d099-43ea-a4c7-28283b8c689e">
+          <propertyInstance
+            Id="b88b1c5d-f4e4-43bf-b5e3-9a2624538c83"
+            name="TargetDirectory"
+            value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="2b001a8f-5360-4c6e-a043-ba98e486692c">
+          <propertyInstance
+            Id="e0a01086-1e77-4cba-b1f8-ba1d21605b3a"
+            name="TargetName"
+            value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="a0e28710-0b28-448e-a01d-8d0fd54a4c6e">
+          <propertyInstance
+            Id="61b8bf90-5b34-4e8d-9dca-b91e5512af8e"
+            name="Overwrite"
+            value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="aff5dac5-e6f3-4b6f-b0a1-455cd21dd031">
+          <propertyInstance
+            Id="fa553ae0-c6a0-4ef7-87f8-efe3b6b20ed9"
+            name="Parameters" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="9c047154-5ebc-4070-bea9-069c24fdb55f">
+      <profileInstance
+        Id="3fa5e642-6b69-4244-b421-43857a0a5089"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="e161c678-d628-44e0-9e39-9451f3f311f3">
+      <profileInstance
+        Id="78106cf6-b4fb-4832-8577-e1a6958fbb16"
+        name="TextTemplateBindings" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="1e9c1bc9-ca45-43eb-a374-7c43f6f45628"
+        name="Program"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="b3a63b14-b8e8-4d38-bcb6-37aa6c7d322d"
+            isDerived="false"
+            sourceEndRoleName="Program"
+            targetEndRoleName="Main_Form"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5610e035-e350-4234-bee1-429395fc3378"
+              LastKnownName="Main_Form"
+              LastKnownLocation="UML class diagramm.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f7f2ba8c-1588-429c-84cb-27bbd3996ba0"
+                  name="Program"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9debee0c-9e85-4591-b86f-9c2ca89648f0"
+                  name="Main_Form"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5610e035-e350-4234-bee1-429395fc3378"
+        name="Main_Form"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="4883def0-6443-4e83-9588-d767981ebe20"
+            isDerived="false"
+            sourceEndRoleName="Main_Form"
+            targetEndRoleName="Menu_Form"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="e3878cda-ec5d-47b8-ba5b-c9a144c12999"
+              LastKnownName="Menu_Form"
+              LastKnownLocation="UML class diagramm.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="323ea520-0d08-4eab-a63c-b3048ede0922"
+                  name="Main_Form"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="23c120ce-0d45-4d5d-9647-aa3b54c1c403"
+                  name="Menu_Form"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e3878cda-ec5d-47b8-ba5b-c9a144c12999"
+        name="Menu_Form"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="42227b5b-dff3-433d-b209-d421c7afb842"
+            isDerived="false"
+            sourceEndRoleName="Menu_Form"
+            targetEndRoleName="Ref_Form"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b422e4d6-fbc3-4178-9616-79368347cc4a"
+              LastKnownName="Ref_Form"
+              LastKnownLocation="UML class diagramm.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="672a1094-e01d-40f0-a9fe-e7826de0a8cb"
+                  name="Menu_Form"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="25e484cf-7b7a-4faa-9fa0-49d1a276646a"
+                  name="Ref_Form"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a9fb5645-c303-4e51-9bad-758a79d4c61c"
+            isDerived="false"
+            sourceEndRoleName="Menu_Form"
+            targetEndRoleName="Form1"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c1903a02-ad48-442c-9d8b-3f4c77fe6d90"
+              LastKnownName="Form1"
+              LastKnownLocation="UML class diagramm.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="70b03e0f-b32c-4fc7-a791-56962e22d9d6"
+                  name="Menu_Form"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ac7b5bbd-310f-41c5-b0db-7e8360751fbd"
+                  name="Form1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="bf61a09b-fb19-4872-9c93-5c174501293e"
+            isDerived="false"
+            sourceEndRoleName="Menu_Form"
+            targetEndRoleName="Description_Form"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="123a32f9-ddad-4dda-8085-89544c8d245b"
+              LastKnownName="Description_Form"
+              LastKnownLocation="UML class diagramm.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2a82e7f6-ed2b-478f-8623-4bc75bf1e037"
+                  name="Menu_Form"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b8f15200-d0a5-44ec-a68d-3f3cbb21c3a4"
+                  name="Description_Form"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1b757d28-6dcc-4709-82e7-b4f0e02616ed"
+            isDerived="false"
+            sourceEndRoleName="Menu_Form"
+            targetEndRoleName="Flowchart_Form"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="da6ef5b3-9028-4458-b966-458c362f718b"
+              LastKnownName="Flowchart_Form"
+              LastKnownLocation="UML class diagramm.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b334366b-5563-4e3e-9b4b-c03fd524d106"
+                  name="Menu_Form"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f456d2ea-b722-4d30-b09a-bfbd71438759"
+                  name="Flowchart_Form"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="49378e50-4127-447a-9d92-7fd55ea077fa"
+            isDerived="false"
+            sourceEndRoleName="Menu_Form"
+            targetEndRoleName="About_Form"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b0619a19-2cf4-4098-83f6-f540b3d5f727"
+              LastKnownName="About_Form"
+              LastKnownLocation="UML class diagramm.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f165eff0-a1bd-4dbd-be2b-34ba2f7839fb"
+                  name="Menu_Form"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bc832f2e-9d96-4a2a-977a-ba18acfbccf3"
+                  name="About_Form"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c1903a02-ad48-442c-9d8b-3f4c77fe6d90"
+        name="Form1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="6e97f5a5-04e3-42c0-99f0-433b277e6bf8"
+            isDerived="false"
+            sourceEndRoleName="Form1"
+            targetEndRoleName="VisForm"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="efcb1048-1668-471b-9941-178ecedacc7f"
+              LastKnownName="VisForm"
+              LastKnownLocation="UML class diagramm.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="16bead16-8a28-457c-889d-f7b94bf0675e"
+                  name="Form1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c6e56a8d-6cc1-41b2-9e0e-dedcb34a3bbc"
+                  name="VisForm"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="bf0b9bde-2381-49f7-9bac-4e97e06f3920"
+            name="public System.Windows.Forms.Control[,] In_matrix"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="bf355ba6-717f-4dc2-bb84-e111ff109c41"
+            name="In_Matrix"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="137889db-effa-4764-90ae-14640d091b0c"
+            name="public System.Windows.Forms.Control[,] In_matrix_L"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="854cee06-5a69-4021-9278-854d8fc6bb08"
+            name="private VisForm vs"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="8ecce62e-67b1-42af-bf50-92d8d1a7c227"
+            name="public double[] solve"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c78d09c6-07af-44af-80fe-6aba501e7e02"
+                  name="double["
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a223e545-0d80-4b31-8471-4001d5971fde"
+                  name="] A"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a9b5b54c-7239-4c21-aca4-dd7f08945e79"
+                  name="double[] X"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d990e6c0-77bf-4e76-aed7-8ef5a24435dd"
+                  name="int N"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="21ae3573-8968-40e3-a5c4-9a05f56ac2db"
+            name="private void print_false"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6d605dea-dd26-41ba-aba2-a23814837c7f"
+            name="private void Init_Input_Field"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7321955a-148f-4412-8031-9c7a61de25ea"
+                  name="object sender"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c919c9c8-0c21-4db6-a36b-d253007021cf"
+                  name="EventArgs e"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="752f3eca-0e38-4f98-9a32-72951604afad"
+            name="private void print_X"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a133f0ac-3462-40c2-b49a-002f27f21c29"
+                  name="double[] X"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3bdb8ab1-7f4a-4c62-857a-132e88e37d6c"
+            name="private void Solve_SLAU"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2bbf73e2-d2d0-4f94-ab50-a60be0f6332d"
+                  name="object sender"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d0e7d5b5-6a35-49da-b58b-fc839542c992"
+                  name="EventArgs e"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5c034913-0a15-4a94-9ae8-f943b1b2e1f9"
+            name="private void btn_vis"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4b71f006-ea23-4c4d-be3f-211dcf1ae879"
+                  name="object sender"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2997589a-198d-4d0a-933a-8eb41aba70c3"
+                  name="EventArgs e"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="efcb1048-1668-471b-9941-178ecedacc7f"
+        name="VisForm"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="123a32f9-ddad-4dda-8085-89544c8d245b"
+        name="Description_Form"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="da6ef5b3-9028-4458-b966-458c362f718b"
+        name="Flowchart_Form"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b422e4d6-fbc3-4178-9616-79368347cc4a"
+        name="Ref_Form"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b0619a19-2cf4-4098-83f6-f540b3d5f727"
+        name="About_Form"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
